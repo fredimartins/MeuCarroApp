@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Activity -->
+    <string name="app_name">"MeuCarroApp"</string>
+    <string name="title_activity_maps">"Cade Meu Carro?"</string>
+    <string name="title_activity_settings">"Settings"</string>
+    <string name="title_activity_new_car">"Adicionar Novo Carro"</string>
+    <string name="btn_send_new_car">"Enviar"</string>
+
+    <!-- Model Carro -->
+    <string name="field_id">"ID: "</string>
+    <string name="field_odometer">"Hodômetro: "</string>
+    <string name="field_oil_change_in">"Óleo trocado em: "</string>
+    <string name="field_oil_change_missing">"Faltam: "</string>
+    <string name="field_oil_change_km">"km: "</string>
+    <string name="field_alarm">"Alarme: "</string>
+    <string name="field_show_in_map">"Ver No Mapa"</string>
+
+
+    <!-- MainActivity -->
+    <string name="msg_error">"Erro"</string>
+    <string name="options_activate">"Ativar"</string>
+    <string name="options_deactivate">"Desativar"</string>
+    <string name="title_change_alarm">"Mudar o status do Alarme"</string>
+    <string name="msg_load_cars_success">"Lista de carros carregada com sucesso!"</string>
+    <string name="msg_load_cars_fail">"Falha ao obter a lista de carros"</string>
+    <string name="msg_alarm_change_success">"Alarme alterado com sucesso!"</string>
+    <string name="msg_alarm_change_fail">"Falha ao alterar o Alarme"</string>
+
+    <!-- MapsActivity -->
+    <string name="msg_car_updated">"Carro Atualizado!"</string>
+
+    <!-- NewCarActivity -->
+    <string name="msg_calling_server">"Contatando Servidor"</string>
+    <string name="msg_wait_new_car">"Aguarde enquando o novo carro é criado"</string>
+    <string name="msg_new_car_ok">"Novo Carro Criado!"</string>
+    <string name="warn_license_plate">"A placa não respeita o modelo: AAA-1234"</string>
+    <string name="warn_model">"O modelo do carro não respeita o modelo do campo: Gol 1.0"</string>
+    <string name="warn_manufacturer">"O Fabricante deve ser preenchido"</string>
+
+
+
+</resources>

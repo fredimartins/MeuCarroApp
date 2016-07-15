@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"MeuCarroApp"</string>
+    <string name="btn_send_new_car">"Send"</string>
+    <string name="field_alarm">"Alarm: "</string>
+    <string name="field_id">"ID: "</string>
+    <string name="field_odometer">"Odometer: "</string>
+    <string name="field_oil_change_in">"Oil Changed in: "</string>
+    <string name="field_oil_change_km">"km: "</string>
+    <string name="field_oil_change_missing">"Missing: "</string>
+    <string name="field_show_in_map">"Show in Map"</string>
+    <string name="msg_alarm_change_fail">"Alarm change Fail"</string>
+    <string name="msg_alarm_change_success">"Alarm chaange success!"</string>
+    <string name="msg_calling_server">"Calling Server"</string>
+    <string name="msg_car_updated">"Car Updated!"</string>
+    <string name="msg_error">"Error"</string>
+    <string name="msg_load_cars_fail">"Fail on get new cars"</string>
+    <string name="msg_load_cars_success">"Successfully Loaded Cars"</string>
+    <string name="msg_new_car_ok">"New Car Created!"</string>
+    <string name="msg_wait_new_car">"Wait while the new car is created"</string>
+    <string name="options_activate">"Activate"</string>
+    <string name="options_deactivate">"Deactivate"</string>
+    <string name="title_activity_maps">"Where is my car?"</string>
+    <string name="title_activity_new_car">"Create New Car"</string>
+    <string name="title_activity_settings">"Settings"</string>
+    <string name="title_change_alarm">"Change Alarm Status"</string>
+    <string name="warn_license_plate">"The license plate does not respect the model: AAA-1234"</string>
+    <string name="warn_manufacturer">"The manufacturer must be completed"</string>
+    <string name="warn_model">"The car model does not respect the field model: Gol 1.0"</string>
+</resources>
