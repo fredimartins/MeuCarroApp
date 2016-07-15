@@ -37,5 +37,10 @@
     <string name="warn_license_plate">"A placa não respeita o modelo: AAA-1234"</string>
     <string name="warn_model">"O modelo do carro não respeita o modelo do campo: Gol 1.0"</string>
     <string name="warn_manufacturer">"O Fabricante deve ser preenchido"</string>
+    <string name="msg_oil_change_fail">"Falha ao alterar a troca de oleo"</string>
+    <string name="msg_oil_change_success">"Troca de oleo alterada com sucesso!"</string>
+    <string name="options_cancel_update_oil_change">"Cancelar"</string>
+    <string name="options_update_oil_change">"Atualizar"</string>
+    <string name="title_update_oil_change">"Atualizar Troca de Oleo"</string>
 
 </resources>

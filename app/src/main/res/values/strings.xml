@@ -26,6 +26,11 @@
     <string name="msg_load_cars_fail">"Falha ao obter a lista de carros"</string>
     <string name="msg_alarm_change_success">"Alarme alterado com sucesso!"</string>
     <string name="msg_alarm_change_fail">"Falha ao alterar o Alarme"</string>
+    <string name="msg_oil_change_success">"Troca de oleo alterada com sucesso!"</string>
+    <string name="msg_oil_change_fail">"Falha ao alterar a troca de oleo"</string>
+    <string name="options_update_oil_change">"Atualizar"</string>
+    <string name="title_update_oil_change">"Atualizar Troca de Oleo"</string>
+    <string name="options_cancel_update_oil_change">"Cancelar"</string>
 
     <!-- MapsActivity -->
     <string name="msg_car_updated">"Carro Atualizado!"</string>

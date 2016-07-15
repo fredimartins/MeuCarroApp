@@ -27,4 +27,9 @@
     <string name="warn_license_plate">"The license plate does not respect the model: AAA-1234"</string>
     <string name="warn_manufacturer">"The manufacturer must be completed"</string>
     <string name="warn_model">"The car model does not respect the field model: Gol 1.0"</string>
+    <string name="msg_oil_change_fail">"Fail on update oil change"</string>
+    <string name="msg_oil_change_success">"Oil Change updated Successfully"</string>
+    <string name="options_cancel_update_oil_change">"Cancel"</string>
+    <string name="options_update_oil_change">"Update"</string>
+    <string name="title_update_oil_change">"Update Oil Change"</string>
 </resources>

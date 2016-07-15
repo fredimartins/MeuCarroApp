@@ -121,6 +121,8 @@ public class MainActivity extends AppCompatActivity {
                         openMap();
                     } else if (item.contains(getString(R.string.field_alarm))) {
                         ChangeAlarmStatus(groupPosition);
+                    } else if (item.contains(getString(R.string.field_oil_change_in))) {
+                        UpdateOilChange(groupPosition);
                     }
                     return true;
                 }
@@ -206,6 +208,46 @@ public class MainActivity extends AppCompatActivity {
         updateFab.setLayoutParams(layoutParams2);
         updateFab.startAnimation(hide_fab_2);
         updateFab.setClickable(false);
+    }
+
+    protected void UpdateOilChange(final Integer group) {
+        AlertDialog alerta;
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(getString(R.string.title_update_oil_change));
+        builder.setIcon(android.R.drawable.ic_dialog_alert);
+        builder.setPositiveButton(getString(R.string.options_update_oil_change), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface arg0, int arg1) {
+                String OIL_URL = URL + "/" + selectedCar + "/set/trocaoleo/";
+                JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, OIL_URL, new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.msg_oil_change_success),
+                                Toast.LENGTH_LONG).show();
+                        carros.put(response);
+                        updateCars(null, group);
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.msg_oil_change_fail),
+                                Toast.LENGTH_LONG).show();
+                        updateCars(error.toString(), null);
+                    }
+                });
+
+                CustomVolleyController.getmInstance().addToRequestQueue(request);
+            }
+        });
+        builder.setNegativeButton(getString(R.string.options_cancel_update_oil_change), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface arg0, int arg1) {
+                arg0.dismiss();
+            }
+        });
+        //cria o AlertDialog
+        alerta = builder.create();
+        //Exibe
+        alerta.show();
+
     }
 
     protected void ChangeAlarmStatus(final Integer group) {
